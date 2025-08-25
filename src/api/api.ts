@@ -3,6 +3,7 @@ import admin from "./admin";
 import gameServer from "./game-server";
 import serverInfo from "./server-info";
 import user from "./user";
+import auth from "./auth";
 
 export default new Elysia({ prefix: "/api" })
     .onError(async ({ code, set, error }) => {
@@ -13,5 +14,6 @@ export default new Elysia({ prefix: "/api" })
     })
     .use(serverInfo)
     .use(user)
+    .use(auth)
     .use(admin)
     .use(gameServer);

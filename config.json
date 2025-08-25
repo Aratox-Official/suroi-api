@@ -1,0 +1,9 @@
+{
+  "hostname": "0.0.0.0",
+  "port": 3000,
+  "maxNameLen": 24,
+  "authenticationMethod": "default",
+  "trustedServerIPs": ["127.0.0.1"],
+  "authServer": "",
+  "regions": ["us-east-1"]
+}
